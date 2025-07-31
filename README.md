@@ -1,53 +1,83 @@
-# FeNAgO — Next.js Agentic SaaS Boilerplate
+# AI Voice Agent
 
-![FeNAgO Logo](./app/icon.png)
+## Overview
 
-FeNAgO is a complete platform for building agentic AI-powered SaaS products. This template allows you to create Agentic SaaS applications without wasting time on the plumbing and infrastructure so you can build products in days and not months.
+AI Voice Agent is a cutting-edge platform that transforms text into natural-sounding speech using advanced AI voice synthesis technology. Our mission is to empower businesses and individuals with powerful voice automation capabilities, making it easier to create engaging audio content, automate customer interactions, and enhance digital experiences.
 
-FeNAgO empowers students, developers, startups, and entrepreneurs to build fully agentic SaaS solutions at lightning speed by handling security (logins & registration), database setup, SEO, and monetization right out of the box—powered by Next.js, Tailwind, and React. All you bring is your idea!
+## Features
 
-<sub>**Watch/Star the repo to be notified when updates are pushed**</sub>
+- 🌟 AI-Powered Voice Synthesis
+  - Natural-sounding speech generation
+  - Multiple voice options and accents
+  - Real-time text-to-speech conversion
+
+- 🔄 Advanced Voice Processing
+  - Voice customization and tuning
+  - Emotion and tone control
+  - Speed and pitch adjustment
+
+- 🛡️ Enterprise-Grade Security
+  - Secure authentication and authorization
+  - Data encryption and privacy protection
+  - Role-based access control
+
+- 📈 Scalable Infrastructure
+  - Built with Next.js 14 and React
+  - Optimized for high performance
+  - Cloud-ready architecture
+
+## Technology Stack
+
+- **Frontend**: Next.js 14, React 18, TypeScript
+- **Styling**: Tailwind CSS, DaisyUI
+- **Voice Processing**: ElevenLabs API
+- **Authentication**: NextAuth.js
+- **Database**: MongoDB
+- **Notifications**: Resend
+- **Automation**: n8n
+- **Storage**: Airtable
 
 ## Getting Started
 
-Follow these steps to get FeNAgO up and running on your machine:
-
-1. Create a new folder and open WindSurf and the folder  
-2. Clone the repository:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/fenago/fenago21.git
+   git clone https://github.com/yourusername/ai-voice-agent.git
    ```
-3. Install dependencies:
+
+2. Install dependencies:
    ```bash
    npm install
    ```
-4. Remove the original remote (if you want to push to your own repository):
+
+3. Create a `.env` file with your configuration:
    ```bash
-   git remote remove origin
+   cp .env.example .env
    ```
-5. Start the development server:
+
+4. Start the development server:
    ```bash
    npm run dev
    ```
 
-That will get you running!
+## Usage
 
-6. Environment setup:
-   - Rename `.env.sample` to `.env`
-   - Add your API keys and other credentials to the `.env` file
+1. Sign up or log in to your account
+2. Create new voice projects
+3. Upload or input text content
+4. Select desired voice settings
+5. Generate and download audio files
 
-## Documentation
+## Contributing
 
-FeNAgO comes with comprehensive documentation to help you get started quickly:
+We welcome contributions from the community! Please review our contributing guidelines before submitting pull requests.
 
-### [DevDocs](./DevDocs)
+## License
 
-Implementation guides for setting up core functionality:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- [Setting Up Email With Resend](./DevDocs/1_Setting_Up_Email_With_Resend.md)
-- [Setting Up MongoDB Atlas](./DevDocs/2_Setting_Up_MongoDB_Atlas.md)
-- [Setting Up Google Authentication](./DevDocs/3_Setting_Up_Google_Authentication.md)
-- [Setting Up Magic Links Authentication](./DevDocs/4_Setting_Up_Magic_Links_Authentication.md)
+## Support
+
+For support, please contact our team at support@voiceagent.com or use our in-app support system.
 - [Setting Up Stripe Payments](./DevDocs/5_Setting_Up_Stripe_Payments.md)
 - [Setting Up SEO Features](./DevDocs/6_Setting_Up_SEO_Features.md)
 - [Setting Up Analytics With DataFast](./DevDocs/7_Setting_Up_Analytics_With_DataFast.md)

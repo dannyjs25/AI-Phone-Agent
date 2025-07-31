@@ -1,7 +1,8 @@
 "use client";
 
+import React from "react";
 import { useState } from "react";
-import apiClient from "@/libs/api";
+import { makeRequest } from "@/lib/vapi";
 import config from "@/config";
 
 // This component is used to create Stripe Checkout Sessions
@@ -21,15 +22,12 @@ const ButtonCheckout = ({
     setIsLoading(true);
 
     try {
-      const { url }: { url: string } = await apiClient.post(
-        "/stripe/create-checkout",
-        {
-          priceId,
-          successUrl: window.location.href,
-          cancelUrl: window.location.href,
-          mode,
-        }
-      );
+      const { url }: { url: string } = await makeRequest("POST", "/stripe/create-checkout", {
+        priceId,
+        successUrl: window.location.href,
+        cancelUrl: window.location.href,
+        mode,
+      });
 
       window.location.href = url;
     } catch (e) {

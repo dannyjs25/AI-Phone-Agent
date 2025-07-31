@@ -1,5 +1,6 @@
 "use client";
 
+import React from 'react';
 import { Crisp } from "crisp-sdk-web";
 import config from "@/config";
 

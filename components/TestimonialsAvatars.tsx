@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from "next/image";
 
 const avatars: {
@@ -5,16 +6,15 @@ const avatars: {
   src: string;
 }[] = [
   {
-    alt: "User",
-    // Ideally, load from a statically generated image for better SEO performance (import userImage from "@/public/userImage.png")
+    alt: "Content Creator",
     src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3276&q=80",
   },
   {
-    alt: "User",
+    alt: "Podcaster",
     src: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
   },
   {
-    alt: "User",
+    alt: "Marketer",
     src: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
   },
   {

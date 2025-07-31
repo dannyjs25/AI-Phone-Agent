@@ -1,4 +1,5 @@
-import config from "@/config";
+import React from 'react';
+import config from "../src/config";
 import ButtonCheckout from "./ButtonCheckout";
 
 // <Pricing/> displays the pricing plans for your app
@@ -12,7 +13,7 @@ const Pricing = () => {
         <div className="flex flex-col text-center w-full mb-20">
           <p className="font-medium text-primary mb-8">Pricing</p>
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Save hours of repetitive code and ship faster!
+            Transform text into natural speech with ease
           </h2>
         </div>
 

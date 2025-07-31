@@ -1,37 +1,33 @@
+import React from 'react';
 import { Suspense, ReactNode } from 'react';
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
-import FeaturesAccordion from "@/components/FeaturesAccordion";
-import Pricing from "@/components/Pricing";
-import Testimonials3 from "@/components/Testimonials3";
-import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import Pricing from "../components/Pricing";
 import { Metadata } from 'next';
 
-// Add metadata for SEO
+// Add metadata for AI Voice Agent
 export const metadata: Metadata = {
-  title: 'FeNAgO - Agentic AI SaaS Platform Template',
-  description: 'The complete platform for building agentic AI-powered SaaS products—ideal for students, developers, startups, and entrepreneurs looking to innovate rapidly. In the near future, every traditional SaaS application will inevitably be surpassed by an Agentic SaaS solution, redefining the competitive landscape.',
-  keywords: 'agentic AI, SaaS template, AI platform, DrLee, AI development, FeNAgO, AI startup',
+  title: 'AI Voice Agent - Transform Text into Natural Speech',
+  description: 'Transform text into natural-sounding speech using advanced AI voice synthesis technology.',
+  keywords: 'AI voice synthesis, text to speech, AI voice agent, speech synthesis, voice processing',
 };
 
 export default function Home(): JSX.Element {
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Hero />
+      <Suspense fallback={<div className="text-center py-8">Loading...</div>}>
         <Header />
       </Suspense>
-      <main>
-        {/* FeNAgO - The complete platform for building agentic AI-powered SaaS products */}
-        <Hero />
-        <Problem />
-        <FeaturesAccordion />
-        <Pricing />
-        <Testimonials3 />
-        <FAQ />
-        <CTA />
+      <main className="min-h-screen bg-gray-50">
+        <div className="container mx-auto px-4 py-8">
+          <div className="space-y-12">
+            <Features />
+            <Pricing />
+          </div>
+        </div>
       </main>
       <Footer />
     </>
